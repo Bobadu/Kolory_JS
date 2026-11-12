@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Kolory</h1>
+
+        <form id="ustawienia">
+            <label>
+                Wiersze
+                <input type="number" id="wiersze" min="1" max="40" value="6" required>
+            </label>
+            <span class="razy">×</span>
+            <label>
+                Kolumny
+                <input type="number" id="kolumny" min="1" max="40" value="8" required>
+            </label>
+            <button type="submit">Generuj</button>
+        </form>
+
+        <div class="opcje">
+            <label><input type="checkbox" id="pokazKody"> pokaż kody kolorów</label>
+            <button type="button" id="pauza" disabled>Pauza</button>
+        </div>
+
+        <p id="info">Podaj wymiary planszy i kliknij „Generuj”</p>
+
+        <div id="plansza"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
